@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import './styles/index.scss'
+import './styles/index.scss';
 import { useTheme } from 'app/providers/ThemeProvider/lib/useTheme';
 import { classNames as cn } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
@@ -12,10 +12,10 @@ const App = () => {
   return (
     <div className={cn('app', {}, [theme])}>
       <Suspense fallback={123}>
-        <Navbar/>
+        <Navbar />
         <div className="content-page">
-          <Sidebar/>
-          <RouterProvider/>
+          <Sidebar />
+          <RouterProvider />
         </div>
       </Suspense>
     </div>

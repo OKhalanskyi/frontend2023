@@ -6,13 +6,13 @@ import { buildResolvers } from './buildResolvers';
 import { buildDevServer } from './buildDevServer';
 
 export const buildWebpackConfig = (options: BuildOptions): webpack.Configuration => {
-  const { mode, paths, isDev} = options;
+  const { mode, paths, isDev } = options;
 
   return {
     mode,
     entry: paths.entry,
     output: {
-      filename: "[name].[contenthash].js",
+      filename: '[name].[contenthash].js',
       path: paths.build,
       clean: true,
     },
@@ -23,5 +23,5 @@ export const buildWebpackConfig = (options: BuildOptions): webpack.Configuration
     resolve: buildResolvers(options),
     devtool: isDev ? 'inline-source-map' : undefined,
     devServer: isDev ? buildDevServer(options) : undefined,
-  }
-}
+  };
+};
