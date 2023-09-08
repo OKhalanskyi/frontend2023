@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   parser: '@typescript-eslint/parser',
   extends: [
@@ -44,6 +45,10 @@ module.exports = {
     'no-shadow': 'off',
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'max-len': ['error', {
+      ignoreComments: true,
+      code: 100,
+    }],
   },
   globals: {
     __IS_DEV__: true,
