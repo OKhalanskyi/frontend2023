@@ -7,7 +7,7 @@ import styles from './Error.page.module.scss';
 interface ErrorPageProps {
   className?: string;
 }
-export const ErrorPage: FC<ErrorPageProps> = ({ className }) => {
+const ErrorPage: FC<ErrorPageProps> = ({ className }) => {
   const { t } = useTranslation();
 
   const reloadPage = () => {
@@ -26,3 +26,5 @@ export const ErrorPage: FC<ErrorPageProps> = ({ className }) => {
     </div>
   );
 };
+
+export default ErrorPage;
