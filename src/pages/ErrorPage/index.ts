@@ -1,3 +1,3 @@
-import { ErrorPage } from './ui/Error.page';
+import ErrorPage from './ui/Error.page';
 
 export { ErrorPage };
