@@ -7,5 +7,6 @@
   "throw error": "Зробити помилку",
   "languageShort": "UA",
   "main": "Домашня",
-  "about": "Про нас"
+  "about": "Про нас",
+  "login": "login"
 }

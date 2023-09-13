@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import './styles/index.scss';
 import { useTheme } from 'app/providers/ThemeProvider/lib/useTheme';
 import { classNames as cn } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';

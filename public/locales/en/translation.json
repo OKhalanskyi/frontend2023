@@ -7,5 +7,6 @@
   "throw error": "throw error",
   "languageShort": "EN",
   "main": "Home",
-  "about": "About"
+  "about": "About",
+  "login": "login"
 }
