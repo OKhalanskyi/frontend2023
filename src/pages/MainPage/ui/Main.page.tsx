@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BugButton } from 'app/providers/ErrorBoundary';
-import { Button, ThemeButton } from 'shared/ui/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button';
 
 const MainPage = () => {
   const { t } = useTranslation('main');
@@ -11,7 +11,7 @@ const MainPage = () => {
       main
       <BugButton />
       {t('main')}
-      <Button theme={ThemeButton.OUTLINE}>btn</Button>
+      <Button theme={ButtonTheme.OUTLINE}>btn</Button>
     </div>
   );
 };

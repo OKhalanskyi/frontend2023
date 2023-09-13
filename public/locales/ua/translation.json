@@ -1,8 +1,11 @@
 {
-  "language": "ua",
+  "language": "Українська",
   "testExample": "Український переклад",
   "page is not found": "Сторінка не знайдена",
   "unhandled error": "Непередбачена помилка",
   "reload page": "Поновити сторінку",
-  "throw error": "Зробити помилку"
+  "throw error": "Зробити помилку",
+  "languageShort": "UA",
+  "main": "Домашня",
+  "about": "Про нас"
 }
