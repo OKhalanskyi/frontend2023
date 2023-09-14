@@ -8,5 +8,7 @@
   "languageShort": "UA",
   "main": "Домашня",
   "about": "Про нас",
-  "login": "login"
+  "login": "login",
+  "password": "password",
+  "username": "username"
 }

@@ -8,5 +8,7 @@
   "languageShort": "EN",
   "main": "Home",
   "about": "About",
-  "login": "login"
+  "login": "login",
+  "password": "password",
+  "username": "username"
 }

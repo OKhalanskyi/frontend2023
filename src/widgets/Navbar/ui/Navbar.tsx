@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Modal } from 'shared/ui/Modal';
 import { Button, ButtonTheme } from 'shared/ui/Button';
+import { LoginModal } from 'features/AuthByUsername';
 import styles from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -12,22 +12,27 @@ export const Navbar: React.FC<NavbarProps> = ({ className }) => {
   const { t } = useTranslation();
   const [isAuthModal, setIsAuthModal] = useState(false);
 
-  const onToggleModal = useCallback(() => {
-    setIsAuthModal((prev) => !prev);
+  const onCloseModal = useCallback(() => {
+    setIsAuthModal(false);
+  }, []);
+
+  const onShowModal = useCallback(() => {
+    setIsAuthModal(true);
   }, []);
 
   return (
     <div className={classNames(styles.Navbar, {}, [className])}>
       <Button
         theme={ButtonTheme.CLEAR_INVERTED}
-        onClick={onToggleModal}
+        onClick={onShowModal}
         className={styles.links}
       >
         {t('login')}
       </Button>
-      <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-        Lorem ipsum dolor sit.
-      </Modal>
+      <LoginModal
+        isOpen={isAuthModal}
+        onClose={onCloseModal}
+      />
     </div>
   );
 };
