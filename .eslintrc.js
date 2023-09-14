@@ -38,6 +38,7 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
+    'arrow-body-style': 'off',
     'no-underscore-dangle': 'off',
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
@@ -61,6 +62,7 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
+    'no-param-reassign': 'off',
   },
   globals: {
     __IS_DEV__: true,
