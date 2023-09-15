@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { FC } from 'react';
+import { memo } from 'react';
 import styles from './Typography.module.scss';
 
 export enum TypographyTheme {
@@ -13,7 +13,7 @@ interface TypographyProps {
   text?: string;
   theme?: TypographyTheme
 }
-export const Typography: FC<TypographyProps> = (props) => {
+export const Typography = memo((props: TypographyProps) => {
   const {
     className,
     title,
@@ -27,4 +27,4 @@ export const Typography: FC<TypographyProps> = (props) => {
       {text && <p className={styles.text}>{text}</p>}
     </div>
   );
-};
+});
