@@ -10,5 +10,8 @@
   "about": "Про нас",
   "login": "login",
   "password": "password",
-  "username": "username"
+  "username": "username",
+  "Authorization form": "Authorization form",
+  "Incorrect username or password": "Incorrect username or password",
+  "logout": "logout"
 }
