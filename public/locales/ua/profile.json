@@ -1,4 +1,16 @@
 {
   "edit": "edit",
-  "profile": "profile"
+  "profile": "profile",
+  "discard": "discard",
+  "cancel": "cancel",
+  "Error happened while loading": "Error happened while loading",
+  "Reload page": "Reload page",
+  "your name": "your name",
+  "your surname": "your surname",
+  "save": "save",
+  "your city": "your city",
+  "your age": "your age",
+  "your username": "your username",
+  "your avatar": "your avatar",
+  "choose currency": "choose currency"
 }
